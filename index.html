@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080810">
+  <title>ARISE AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+
+    <aside class="sidebar" id="sidebar">
+      <h2 class="brand">✦ ARISE AI</h2>
+
+      <button id="new-chat" class="new-chat">
+        + New chat
+      </button>
+
+      <p class="side-label">YOUR AI ASSISTANT</p>
+      <p class="side-description">
+        Ask questions, explore ideas, and learn something new.
+      </p>
+
+      <div class="sidebar-footer">
+        Created by DJIDRA
+      </div>
+    </aside>
+
+    <section class="chat">
+
+      <header class="topbar">
+        <button
+          id="menu-button"
+          class="menu-button"
+          aria-label="Toggle sidebar"
+        >☰</button>
+
+        <div>
+          <h1>ARISE AI</h1>
+          <p><span class="status-dot"></span> Your AI assistant</p>
+        </div>
+      </header>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="ai-orb">✦</div>
+
+          <h2>Rise beyond limits.</h2>
+
+          <p>
+            I'm ARISE AI. What would you like to know today?
+          </p>
+
+          <div class="suggestions">
+            <button class="suggestion">
+              Explain something difficult
+            </button>
+
+            <button class="suggestion">
+              Help me create a website
+            </button>
+
+            <button class="suggestion">
+              Teach me something new
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="composer-area">
+        <form id="chat-form" class="composer">
+          <textarea
+            id="prompt"
+            rows="1"
+            placeholder="Message ARISE AI..."
+            aria-label="Your message"
+            required
+          ></textarea>
+
+          <button
+            id="send-button"
+            type="submit"
+            aria-label="Send message"
+          >➤</button>
+        </form>
+
+        <p class="disclaimer">
+          ARISE AI can make mistakes. Check important information.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
